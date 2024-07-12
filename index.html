@@ -30,6 +30,15 @@
             color: white;
             text-align: center;
         }
+        .clickable-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+            cursor: pointer;
+        
     </style>
 </head>
 <body>
@@ -41,5 +50,22 @@
         <h1>¡Bienvenido a la página web VioLIN!</h1>
         <p>Esta página está en construcción y se nos vienen tejidos y novedades... Por que no es lo mismo eso de que te jodas y no ves nada.</p>
     </div>
+     <video id="background-video" autoplay loop class="video-background">
+        <source src="web/Screw Fun Work In Progress.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="clickable-screen" onclick="toggleVideo()"></div>
+    <div class="content">
+        <h1>¡Bienvenido a la página web VioLIN!</h1>
+        <p>Esta página está en construcción y se vienen tejidos y novedades... Porque no es lo mismo, te jodes y no ves nada.</p>
+    </div>
+
+    <script>
+        function toggleVideo() {
+            var video = document.getElementById('background-video');
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
 </body>
 </html>
