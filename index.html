@@ -10,12 +10,9 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             color: white;
             text-align: center;
-            background-color: #f0f0f0; /* Color de fondo para cuando el video no se cargue */
+            background-color: #f0f0f0
         }
         .video-background {
             position: fixed;
@@ -26,9 +23,13 @@
             pointer-events: none;
             z-index: -1;
         }
-        .content {
-            position: relative;
-            z-index: 1;
+       .content {
+            position: absolute;
+            bottom: 20px; 
+            width: 100%;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+            text-align: center;
         }
     </style>
 </head>
