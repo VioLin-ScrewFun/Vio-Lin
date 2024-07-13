@@ -42,17 +42,14 @@
     </style>
 </head>
 <body>
-   <video id="background-video" autoplay loop class="video-background">
+      <h1>Control de Video</h1>
+  <video id="background-video" width="320" height="240" controls>
          <source src="web/lasti/lasti.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        Your browser does not support the video tag. <code>video</code>
     </video>
-      <div class="clickable-screen" onclick="toggleVideo()"> </div>
-        <div class="content">
-        <h1>¡Bienvenido a la página web VioLIN ScreW Fun!</h1>
-        <p> Esta página está en construcción y se nos vienen tejidos y novedades... Por que no es lo mismo eso de que te jodas y no veas nada.</p>
-    </div>
-          
-     <script>
+        <button onclick="toggleVideo()">Toggle Play/Pause</button>
+      
+    <script>
         function toggleVideo() {
             var video = document.getElementById('background-video');
             if (video.paused) {
@@ -62,5 +59,9 @@
             }
         }    
     <script> 
+    <div class="content">
+        <h1>¡Bienvenido a la página web VioLIN ScreW Fun!</h1>
+        <p> Esta página está en construcción y se nos vienen tejidos y novedades... Por que no es lo mismo eso de que te jodas y no veas nada.</p>
+    </div>
 </body>
 </html>
