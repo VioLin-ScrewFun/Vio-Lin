@@ -10,7 +10,7 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             overflow: hidden;
-            color: dark grey;
+            color: white;
             text-align: center;
             background-color: black
         }
@@ -25,7 +25,7 @@
         }
        .content {
             position: absolute;
-            bottom: 10px; 
+            bottom: 20px; 
             width: 100%;
             color: white;
             text-align: center;
@@ -36,31 +36,31 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            z-index: 1;
             cursor: pointer;
-        
+            z-index: 2;
+        }
     </style>
 </head>
 <body>
    <video id="background-video" autoplay loop class="video-background">
-         <source src="/Users/Lina/Desktop/Github/VioLin/web/lasti/lasti.mp4" type="video/mp4">
+         <source src="web/lasti/lasti.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-      <div class="clickable-screen" onclick="toggleVideo()">
-    <script>
+      <div class="clickable-screen" onclick="toggleVideo()"></div>
+        <div class="content">
+        <h1>¡Bienvenido a la página web VioLIN ScreW Fun!</h1>
+        <p> Esta página está en construcción y se nos vienen tejidos y novedades... Por que no es lo mismo eso de que te jodas y no veas nada.</p>
+    </div>
+          
+     <script>
         function toggleVideo() {
             var video = document.getElementById('background-video');
             if (video.paused) {
                 video.play();
             } else {
                 video.pause();
-               }
+            }
         }    
-    <script src="/Users/Lina/Desktop/Github/VioLin/scripts.js.js"> 
-        </script>
-    <div class="content">
-        <h1>¡Bienvenido a la página web VioLIN ScreW Fun!</h1>
-        <p> Esta página está en construcción y se nos vienen tejidos y novedades... Por que no es lo mismo eso de que te jodas y no ves nada.</p>
-    </div>
+    <script> 
 </body>
 </html>
