@@ -14,21 +14,27 @@
             text-align: center;
             background-color: black
         }
-        .video-background {
+        .background-video {
+            width: 100vw;
+            height: 100vh
+            object-fit: cover;
             position: fixed;
+            height: 100vh;
             top: 0;
             left: 0;
-            width: 100vw;
-            height: 100vh;
-            pointer-events: cover;
-            z-index: -1;
         }
-       .content {
-            position: absolute;
+       button {
+            position: fixed; 
+            z-index: 10;
+            left: 50%; 
             bottom: 20px; 
-            width: 100%;
-            color: white;
-            text-align: center;
+            transform: translateX(-50%); 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            color: white; 
+            background-color: rgba(0, 0, 0, 0.5); 
+            border: none; 
+            cursor: pointer; 
         }
         .clickable-screen {
             position: fixed;
@@ -42,7 +48,6 @@
     </style>
 </head>
 <body>
-      <h1>Control de Video</h1>
   <video id="background-video" width="320" height="240" controls>
          <source src="web/lasti/lasti.mp4" type="video/mp4">
         Your browser does not support the video tag. <code>video</code>
